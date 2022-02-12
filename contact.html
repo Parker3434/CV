@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="This has my contact details">
+    <title>Contact Details</title>
+</head>
+<body>
+    <p><h1>Contact Details</h1>
+        <ul>
+            <li><strong>Phone#1:</strong> 0344446946</li>
+            <li><strong>Phone#2:</strong> 03312453216</li>
+            <li><strong>Phone#3:</strong> 03002513191</li>
+            <li><strong>Email:</strong> m_saad34@hotmail.com</li>
+
+        </ul>
+    </p>
+    <h1> Reach us via email</h1>
+    <form   action="mailto:m_saad34@hotmail.com" method="post" enctype="text/plain"> <!--action here determines what the submit button will do ad the method = post determines that all 
+        the info collected by the <input> tag will be submitted to the address specified in action
+        so action can be an email address)starting with "mailto:""  to which a user msg along with their contact ino can be submitted
+    Also note that enctype shpuld be set to plain text for the email msg to diplay all the data collected by the <input> in the correct format else it will be encrypted. Also fill the name="" 
+    attribute argument in all <input>tags  with respect to their label to make a more coherent mail msg -->
+        <table cellspacing = 10>
+            <table border="1">
+                <tr>
+                    <td>
+                        <label >Your Name:</label>
+                        <!--How an <input> works varies considerably depending on the value 
+                            of its type attribute, hence the different types are covered in their own separate reference pages.
+                            If this attribute is not specified, the default type adopted is text.-->
+                        
+                    </td>
+                    <td>
+                        <input type="text" name="From" value=""> <!--name and value attributes in all input types are left as blank since these wil be filled in by the user-->
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email:</label>
+                        
+                    </td>
+                        
+                    <td>
+                        <input type="email" name="Email" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Phone#:</label>
+                        
+                    </td>
+
+                    <td>
+                        <input type="number" name="Phone" name="", value="">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label>Message:</label>
+                        
+                        
+                    </td>
+                    <td>
+                        <Textarea name="Message" role="100" cols="50"></Textarea>
+                        
+                    </td>
+                </tr>            
+                
+                
+                
+        </table>
+        <input type="submit" name="" id="">
+
+    </form>
+</body>
+</html>
